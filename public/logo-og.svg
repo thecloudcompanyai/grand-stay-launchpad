@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f0f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8960E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+
+  <!-- Building -->
+  <rect x="150" y="180" width="400" height="320" fill="url(#goldGradient)" rx="16"/>
+
+  <!-- Windows grid -->
+  <g fill="#87CEEB" opacity="0.9">
+    <rect x="190" y="220" width="50" height="50" rx="4"/>
+    <rect x="290" y="220" width="50" height="50" rx="4"/>
+    <rect x="390" y="220" width="50" height="50" rx="4"/>
+    <rect x="190" y="310" width="50" height="50" rx="4"/>
+    <rect x="290" y="310" width="50" height="50" rx="4"/>
+    <rect x="390" y="310" width="50" height="50" rx="4"/>
+    <rect x="240" y="400" width="80" height="60" rx="4"/>
+  </g>
+
+  <!-- Roof -->
+  <polygon points="150,180 350,80 550,180" fill="#B8960E"/>
+
+  <!-- Text Section -->
+  <text x="700" y="200" font-family="'Playfair Display', serif" font-size="72" font-weight="700" fill="#D4AF37">
+    The Grand Stay
+  </text>
+
+  <text x="700" y="280" font-family="'Inter', sans-serif" font-size="42" font-weight="600" fill="#ffffff">
+    Luxury Heritage Hotel
+  </text>
+
+  <text x="700" y="350" font-family="'Inter', sans-serif" font-size="32" fill="#c9a961">
+    Jaipur, Rajasthan
+  </text>
+
+  <text x="700" y="420" font-family="'Inter', sans-serif" font-size="28" fill="#b0b0b0">
+    Royal Rajasthani Hospitality
+  </text>
+
+  <!-- Decorative line -->
+  <line x1="700" y1="450" x2="950" y2="450" stroke="#D4AF37" stroke-width="3"/>
+</svg>
