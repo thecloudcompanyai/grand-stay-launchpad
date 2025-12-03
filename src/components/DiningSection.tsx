@@ -16,49 +16,49 @@ interface MenuItem {
 const menuItems: MenuItem[] = [
   {
     id: "1",
-    name: "Seared Scallops",
-    description: "Pan-seared scallops with truffle butter, micro greens, and balsamic reduction",
-    price: 28,
+    name: "Paneer Tikka",
+    description: "Marinated cottage cheese grilled in tandoor with mint chutney and onion rings",
+    price: 495,
     category: "appetizer",
     image: dish1,
   },
   {
     id: "2",
-    name: "Lobster Bisque",
-    description: "Creamy Maine lobster soup with brandy cream and chive oil",
-    price: 22,
+    name: "Dal Makhani",
+    description: "Slow-cooked black lentils with tomato, butter, and aromatic spices",
+    price: 425,
     category: "appetizer",
     image: dish1,
   },
   {
     id: "3",
-    name: "Wagyu Filet Mignon",
-    description: "8oz prime cut with truffle mash, seasonal vegetables, and red wine jus",
-    price: 68,
+    name: "Laal Maas",
+    description: "Traditional Rajasthani mutton curry with fiery red chillies and garlic",
+    price: 895,
     category: "entree",
     image: dish2,
   },
   {
     id: "4",
-    name: "Chilean Sea Bass",
-    description: "Pan-roasted with saffron risotto, asparagus, and citrus beurre blanc",
-    price: 54,
+    name: "Murgh Makhani",
+    description: "Butter chicken in rich tomato-cream gravy with kasuri methi",
+    price: 695,
     category: "entree",
     image: dish2,
   },
   {
     id: "5",
-    name: "Rack of Lamb",
-    description: "Herb-crusted New Zealand lamb with mint pesto and roasted fingerlings",
-    price: 58,
+    name: "Gatta Curry",
+    description: "Gram flour dumplings in tangy yogurt gravy - authentic Rajasthani specialty",
+    price: 445,
     category: "entree",
     image: dish2,
   },
   {
     id: "6",
-    name: "Tuna Tartare",
-    description: "Yellowfin tuna with avocado mousse, sesame, and wonton crisps",
-    price: 26,
+    name: "Pyaaz Kachori",
+    description: "Crispy pastry stuffed with spiced onions, served with tamarind chutney",
+    price: 295,
     category: "appetizer",
     image: dish1,
   },
@@ -82,12 +82,13 @@ const DiningSection = ({ onAddToOrder }: DiningSectionProps) => {
               Fine Dining
             </p>
             <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">
-              Culinary Excellence
+              Royal Rajasthani Cuisine
             </h2>
             <div className="luxury-divider w-24 mb-6" />
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Experience world-class cuisine at our signature restaurant. Our award-winning chefs 
-              craft each dish using the finest seasonal ingredients, creating memorable dining experiences.
+              Experience authentic flavors at our signature restaurant. Our master chefs 
+              craft each dish using traditional recipes passed down through generations, 
+              creating memorable royal dining experiences.
             </p>
             <div className="flex items-center gap-4 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
@@ -96,7 +97,7 @@ const DiningSection = ({ onAddToOrder }: DiningSectionProps) => {
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-gold" />
-                <span>Dinner: 6PM - 11PM</span>
+                <span>Dinner: 7PM - 11PM</span>
               </div>
             </div>
           </div>
@@ -107,7 +108,7 @@ const DiningSection = ({ onAddToOrder }: DiningSectionProps) => {
               className="w-full h-80 object-cover rounded-xl shadow-elevated"
             />
             <div className="absolute -bottom-4 -left-4 bg-gold text-charcoal px-6 py-3 rounded-lg shadow-gold">
-              <p className="font-serif text-lg font-semibold">Michelin Inspired</p>
+              <p className="font-serif text-lg font-semibold">Heritage Kitchen</p>
             </div>
           </div>
         </div>
@@ -117,7 +118,7 @@ const DiningSection = ({ onAddToOrder }: DiningSectionProps) => {
           {/* Appetizers */}
           <div>
             <h3 className="font-serif text-2xl text-foreground mb-6 flex items-center gap-4">
-              <span>Appetizers</span>
+              <span>Starters</span>
               <div className="flex-1 h-px bg-border" />
             </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -130,7 +131,7 @@ const DiningSection = ({ onAddToOrder }: DiningSectionProps) => {
           {/* Entrees */}
           <div>
             <h3 className="font-serif text-2xl text-foreground mb-6 flex items-center gap-4">
-              <span>Entrées</span>
+              <span>Main Course</span>
               <div className="flex-1 h-px bg-border" />
             </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -165,7 +166,7 @@ const MenuCard = ({ item, onAdd, index }: MenuCardProps) => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal/50 to-transparent" />
         <span className="absolute top-4 right-4 bg-background/90 backdrop-blur-sm text-foreground font-serif text-lg px-3 py-1 rounded-full">
-          ${item.price}
+          ₹{item.price}
         </span>
       </div>
       <div className="p-5">

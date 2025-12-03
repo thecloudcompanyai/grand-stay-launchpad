@@ -11,27 +11,29 @@ const StorySection = () => {
               Our Story
             </p>
             <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">
-              A Legacy of Hospitality
+              A Legacy of Royal Hospitality
             </h2>
             <div className="luxury-divider w-24 mb-8" />
 
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Founded in 2010 by partners Elizabeth and James Morrison, The Grand Stay was born 
-                from a shared passion for exceptional hospitality and timeless elegance. What began 
-                as a dream to create a sanctuary for discerning travelers has blossomed into an 
-                award-winning boutique hotel.
+                Founded in 2010 by Rajesh and Priya Sharma, The Grand Stay was born 
+                from a shared passion for preserving Rajasthan's royal heritage while 
+                offering world-class hospitality. What began as a dream to create a 
+                sanctuary for travelers seeking authentic experiences has blossomed into 
+                an award-winning boutique hotel in the heart of Jaipur.
               </p>
               <p>
-                Every detail at The Grand Stay reflects our commitment to excellence—from the 
-                hand-selected furnishings to our carefully curated dining experience. We believe 
-                that true luxury lies not in opulence, but in the warmth of genuine care and 
-                attention to every guest's needs.
+                Every detail at The Grand Stay reflects our commitment to excellence—from 
+                the hand-painted frescoes adorning our walls to our carefully curated 
+                royal Rajasthani dining experience. We believe that true luxury lies not 
+                in opulence alone, but in the warmth of genuine "Atithi Devo Bhava" – 
+                treating every guest as God.
               </p>
               <p>
-                Today, we continue to welcome guests from around the world, each one becoming 
-                part of our extended family. Our story is still being written, one unforgettable 
-                stay at a time.
+                Today, we continue to welcome guests from around the world, each one 
+                becoming part of our extended family. Our story is still being written, 
+                one unforgettable stay at a time.
               </p>
             </div>
 
@@ -60,15 +62,15 @@ const StorySection = () => {
                 <div className="relative mb-4">
                   <div className="w-40 h-40 md:w-48 md:h-48 mx-auto rounded-full bg-gradient-to-br from-gold/20 to-sapphire/20 p-1">
                     <div className="w-full h-full rounded-full bg-secondary flex items-center justify-center">
-                      <span className="font-serif text-5xl text-gold">E</span>
+                      <span className="font-serif text-5xl text-gold">R</span>
                     </div>
                   </div>
                   <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-gold text-charcoal px-4 py-1 rounded-full text-sm font-medium">
                     Co-Founder
                   </div>
                 </div>
-                <h4 className="font-serif text-xl text-foreground">Elizabeth Morrison</h4>
-                <p className="text-sm text-muted-foreground">Creative Vision</p>
+                <h4 className="font-serif text-xl text-foreground">Rajesh Sharma</h4>
+                <p className="text-sm text-muted-foreground">Operations Excellence</p>
               </div>
 
               {/* Founder 2 */}
@@ -76,24 +78,24 @@ const StorySection = () => {
                 <div className="relative mb-4">
                   <div className="w-40 h-40 md:w-48 md:h-48 mx-auto rounded-full bg-gradient-to-br from-gold/20 to-sapphire/20 p-1">
                     <div className="w-full h-full rounded-full bg-secondary flex items-center justify-center">
-                      <span className="font-serif text-5xl text-gold">J</span>
+                      <span className="font-serif text-5xl text-gold">P</span>
                     </div>
                   </div>
                   <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-gold text-charcoal px-4 py-1 rounded-full text-sm font-medium">
                     Co-Founder
                   </div>
                 </div>
-                <h4 className="font-serif text-xl text-foreground">James Morrison</h4>
-                <p className="text-sm text-muted-foreground">Operations Excellence</p>
+                <h4 className="font-serif text-xl text-foreground">Priya Sharma</h4>
+                <p className="text-sm text-muted-foreground">Creative Vision</p>
               </div>
             </div>
 
             {/* Values */}
             <div className="mt-12 grid grid-cols-3 gap-4">
               {[
-                { icon: Heart, label: "Passion" },
+                { icon: Heart, label: "Seva" },
                 { icon: Award, label: "Excellence" },
-                { icon: Users, label: "Family" },
+                { icon: Users, label: "Parivaar" },
               ].map(({ icon: Icon, label }) => (
                 <div key={label} className="text-center p-4 bg-secondary rounded-xl">
                   <Icon className="w-6 h-6 text-gold mx-auto mb-2" />

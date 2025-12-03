@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { X, Check, User, Mail, Phone, CreditCard } from "lucide-react";
+import { X, Check, User, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import type { Room } from "./RoomsSection";
 
 interface BookingModalProps {
@@ -79,12 +78,12 @@ const BookingModal = ({ room, isOpen, onClose }: BookingModalProps) => {
                 Reservation Confirmed!
               </h3>
               <p className="text-muted-foreground mb-6">
-                Thank you for choosing The Grand Stay. A confirmation email has been sent to {formData.email}.
+                धन्यवाद! Thank you for choosing The Grand Stay. A confirmation email has been sent to {formData.email}.
               </p>
               <div className="bg-secondary rounded-lg p-4 text-left mb-6">
                 <p className="text-sm text-muted-foreground mb-1">Your reservation</p>
                 <p className="font-serif text-lg text-foreground">{room.name}</p>
-                <p className="text-gold font-semibold">${room.price}/night</p>
+                <p className="text-gold font-semibold">₹{room.price.toLocaleString('en-IN')}/night</p>
               </div>
               <Button variant="luxury" onClick={handleClose} className="w-full">
                 Done
@@ -103,7 +102,7 @@ const BookingModal = ({ room, isOpen, onClose }: BookingModalProps) => {
                     />
                     <div>
                       <h4 className="font-serif text-lg text-foreground">{room.name}</h4>
-                      <p className="text-gold font-semibold">${room.price}/night</p>
+                      <p className="text-gold font-semibold">₹{room.price.toLocaleString('en-IN')}/night</p>
                       <p className="text-xs text-muted-foreground">{room.size}</p>
                     </div>
                   </div>
@@ -121,7 +120,7 @@ const BookingModal = ({ room, isOpen, onClose }: BookingModalProps) => {
                           required
                           value={formData.name}
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                          placeholder="John Doe"
+                          placeholder="Rahul Sharma"
                           className="w-full pl-10 pr-4 py-3 bg-secondary border border-border rounded-lg text-foreground focus:outline-none focus:ring-2 focus:ring-gold/50 transition-all"
                         />
                       </div>
@@ -138,7 +137,7 @@ const BookingModal = ({ room, isOpen, onClose }: BookingModalProps) => {
                           required
                           value={formData.email}
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                          placeholder="john@example.com"
+                          placeholder="rahul@example.com"
                           className="w-full pl-10 pr-4 py-3 bg-secondary border border-border rounded-lg text-foreground focus:outline-none focus:ring-2 focus:ring-gold/50 transition-all"
                         />
                       </div>
@@ -155,7 +154,7 @@ const BookingModal = ({ room, isOpen, onClose }: BookingModalProps) => {
                           required
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                          placeholder="+1 (555) 000-0000"
+                          placeholder="+91 98765 43210"
                           className="w-full pl-10 pr-4 py-3 bg-secondary border border-border rounded-lg text-foreground focus:outline-none focus:ring-2 focus:ring-gold/50 transition-all"
                         />
                       </div>
@@ -182,9 +181,9 @@ const BookingModal = ({ room, isOpen, onClose }: BookingModalProps) => {
                     <div className="p-4 bg-gold/10 border border-gold/30 rounded-lg">
                       <div className="flex justify-between items-center">
                         <span className="text-foreground">Total Amount</span>
-                        <span className="font-serif text-2xl text-gold">${room.price}</span>
+                        <span className="font-serif text-2xl text-gold">₹{room.price.toLocaleString('en-IN')}</span>
                       </div>
-                      <p className="text-xs text-muted-foreground mt-1">Per night • Taxes included</p>
+                      <p className="text-xs text-muted-foreground mt-1">Per night • GST included</p>
                     </div>
                   </div>
 

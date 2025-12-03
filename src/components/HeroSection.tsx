@@ -28,14 +28,14 @@ const HeroSection = ({ onCheckAvailability }: HeroSectionProps) => {
       <div className="relative z-10 container mx-auto px-4 pt-24 pb-12">
         <div className="max-w-4xl mx-auto text-center mb-12 animate-fade-up">
           <p className="text-gold font-medium tracking-[0.3em] uppercase text-sm mb-4">
-            Welcome to
+            स्वागत है — Welcome to
           </p>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-cream font-semibold mb-6 leading-tight">
             The Grand Stay
           </h1>
           <p className="text-cream/90 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Where timeless elegance meets modern luxury. Experience unparalleled hospitality
-            in our boutique sanctuary.
+            Where timeless Indian elegance meets modern luxury. Experience unparalleled 
+            hospitality in our heritage sanctuary in Jaipur, Rajasthan.
           </p>
         </div>
 
