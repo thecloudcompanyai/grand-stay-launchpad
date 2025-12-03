@@ -18,26 +18,26 @@ const rooms: Room[] = [
   {
     id: "deluxe",
     name: "Deluxe Room",
-    description: "Elegant comfort with city views. Perfect for couples seeking a refined retreat.",
-    price: 299,
+    description: "Elegant comfort with heritage courtyard views. Perfect for couples seeking a refined Rajasthani retreat.",
+    price: 12999,
     image: roomDeluxe,
-    amenities: ["King Bed", "City View", "Rain Shower", "Mini Bar"],
+    amenities: ["King Bed", "Courtyard View", "Rain Shower", "Mini Bar"],
     size: "35 sqm",
   },
   {
     id: "super-deluxe",
     name: "Super Deluxe",
-    description: "Spacious luxury with premium amenities. Ideal for extended stays and business travelers.",
-    price: 449,
+    description: "Spacious luxury with traditional Jaipur décor. Ideal for extended stays and business travelers.",
+    price: 18999,
     image: roomSuperDeluxe,
     amenities: ["King Bed", "Lounge Area", "Bathtub", "Workspace"],
     size: "50 sqm",
   },
   {
     id: "suite",
-    name: "Grand Suite",
-    description: "Ultimate indulgence with panoramic views. The pinnacle of luxury accommodation.",
-    price: 699,
+    name: "Maharaja Suite",
+    description: "Ultimate royal indulgence with Aravalli views. The pinnacle of heritage luxury accommodation.",
+    price: 35999,
     image: roomSuite,
     amenities: ["Master Suite", "Living Room", "Butler Service", "Private Terrace"],
     size: "85 sqm",
@@ -62,7 +62,7 @@ const RoomsSection = ({ onSelectRoom }: RoomsSectionProps) => {
           </h2>
           <div className="luxury-divider w-24 mx-auto mb-6" />
           <p className="text-muted-foreground leading-relaxed">
-            Each room is thoughtfully designed to provide the perfect balance of comfort and sophistication.
+            Each room is thoughtfully designed with traditional Rajasthani artistry and modern comfort.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ const RoomsSection = ({ onSelectRoom }: RoomsSectionProps) => {
           {[
             { icon: Wifi, label: "Free WiFi" },
             { icon: Car, label: "Valet Parking" },
-            { icon: Coffee, label: "Room Service" },
+            { icon: Coffee, label: "24/7 Room Service" },
             { icon: Sparkles, label: "Daily Housekeeping" },
           ].map(({ icon: Icon, label }) => (
             <div key={label} className="flex items-center gap-2 text-muted-foreground">
@@ -126,7 +126,7 @@ const RoomsSection = ({ onSelectRoom }: RoomsSectionProps) => {
                   <div>
                     <p className="text-xs text-muted-foreground uppercase">From</p>
                     <p className="text-2xl font-serif text-foreground">
-                      ${room.price}
+                      ₹{room.price.toLocaleString('en-IN')}
                       <span className="text-sm text-muted-foreground font-sans">/night</span>
                     </p>
                   </div>

@@ -82,7 +82,7 @@ const CartDrawer = ({
                   />
                   <div className="flex-1">
                     <h4 className="font-serif text-lg text-foreground">{item.name}</h4>
-                    <p className="text-gold font-medium">${item.price}</p>
+                    <p className="text-gold font-medium">₹{item.price}</p>
 
                     {/* Quantity Controls */}
                     <div className="flex items-center gap-3 mt-2">
@@ -125,7 +125,7 @@ const CartDrawer = ({
           <div className="absolute bottom-0 left-0 right-0 p-6 bg-background border-t border-border">
             <div className="flex justify-between items-center mb-4">
               <span className="text-muted-foreground">Subtotal</span>
-              <span className="font-serif text-2xl text-foreground">${total}</span>
+              <span className="font-serif text-2xl text-foreground">₹{total.toLocaleString('en-IN')}</span>
             </div>
             <Button variant="luxury" className="w-full" size="lg">
               Place Order (Mock)

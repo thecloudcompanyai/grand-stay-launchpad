@@ -5,33 +5,33 @@ import { cn } from "@/lib/utils";
 const testimonials = [
   {
     id: 1,
-    name: "Sarah & Michael Thompson",
-    location: "New York, USA",
-    text: "Our anniversary stay at The Grand Stay was absolutely magical. From the champagne welcome to the impeccable room service, every moment was perfect. The Grand Suite exceeded all our expectations.",
+    name: "Ananya & Vikram Mehta",
+    location: "Mumbai, Maharashtra",
+    text: "Our anniversary stay at The Grand Stay was absolutely magical. From the traditional welcome to the impeccable room service, every moment was perfect. The Maharaja Suite exceeded all our expectations. Truly royal treatment!",
     rating: 5,
     date: "October 2024",
   },
   {
     id: 2,
-    name: "David Chen",
-    location: "Singapore",
-    text: "As a frequent business traveler, I've stayed at many luxury hotels. The Grand Stay stands out for its genuine warmth and attention to detail. The restaurant alone is worth the trip.",
+    name: "Arun Krishnamurthy",
+    location: "Bengaluru, Karnataka",
+    text: "As a frequent business traveler, I've stayed at many luxury hotels. The Grand Stay stands out for its genuine warmth and attention to detail. The Laal Maas alone is worth the trip - best I've had!",
     rating: 5,
     date: "September 2024",
   },
   {
     id: 3,
-    name: "Emma Laurent",
-    location: "Paris, France",
-    text: "Simply exquisite. The blend of modern luxury and classic elegance is masterfully done. The spa treatments were heavenly, and the staff made us feel like family.",
+    name: "Meera Kapoor",
+    location: "New Delhi",
+    text: "Simply exquisite. The blend of Rajasthani heritage and modern luxury is masterfully done. The Ayurveda spa treatments were heavenly, and the staff made us feel like royalty. Bahut sundar!",
     rating: 5,
     date: "November 2024",
   },
   {
     id: 4,
-    name: "Robert & Linda Foster",
-    location: "London, UK",
-    text: "We've found our new favorite retreat. The culinary experience was outstanding, and waking up to those views from the Super Deluxe room was breathtaking. We're already planning our return.",
+    name: "Suresh & Lakshmi Iyer",
+    location: "Chennai, Tamil Nadu",
+    text: "We've found our new favorite retreat. The culinary experience was outstanding, and waking up to those Aravalli views from the Super Deluxe room was breathtaking. We're already planning our return. Dhanyavaad!",
     rating: 5,
     date: "August 2024",
   },
@@ -153,7 +153,7 @@ const TestimonialsSection = () => {
             Recognized By
           </p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-            {["TripAdvisor", "Forbes Travel", "Condé Nast", "Luxury Travel"].map((award) => (
+            {["TripAdvisor India", "Outlook Traveller", "Condé Nast", "FHRAI"].map((award) => (
               <div
                 key={award}
                 className="text-primary-foreground/40 font-serif text-lg md:text-xl hover:text-gold transition-colors cursor-default"
