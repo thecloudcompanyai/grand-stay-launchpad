@@ -1,8 +1,6 @@
 import { Plus, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import restaurantImage from "@/assets/restaurant.jpg";
-import dish1 from "@/assets/dish-1.jpg";
-import dish2 from "@/assets/dish-2.jpg";
 
 interface MenuItem {
   id: string;
@@ -20,7 +18,7 @@ const menuItems: MenuItem[] = [
     description: "Marinated cottage cheese grilled in tandoor with mint chutney and onion rings",
     price: 495,
     category: "appetizer",
-    image: dish1,
+    image: "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     id: "2",
@@ -28,7 +26,7 @@ const menuItems: MenuItem[] = [
     description: "Slow-cooked black lentils with tomato, butter, and aromatic spices",
     price: 425,
     category: "appetizer",
-    image: dish1,
+    image: "https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     id: "3",
@@ -36,7 +34,7 @@ const menuItems: MenuItem[] = [
     description: "Traditional Rajasthani mutton curry with fiery red chillies and garlic",
     price: 895,
     category: "entree",
-    image: dish2,
+    image: "https://images.pexels.com/photos/8879567/pexels-photo-8879567.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     id: "4",
@@ -44,7 +42,7 @@ const menuItems: MenuItem[] = [
     description: "Butter chicken in rich tomato-cream gravy with kasuri methi",
     price: 695,
     category: "entree",
-    image: dish2,
+    image: "https://images.pexels.com/photos/2474658/pexels-photo-2474658.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     id: "5",
@@ -52,7 +50,7 @@ const menuItems: MenuItem[] = [
     description: "Gram flour dumplings in tangy yogurt gravy - authentic Rajasthani specialty",
     price: 445,
     category: "entree",
-    image: dish2,
+    image: "https://images.pexels.com/photos/14619296/pexels-photo-14619296.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     id: "6",
@@ -60,7 +58,7 @@ const menuItems: MenuItem[] = [
     description: "Crispy pastry stuffed with spiced onions, served with tamarind chutney",
     price: 295,
     category: "appetizer",
-    image: dish1,
+    image: "https://images.pexels.com/photos/14477883/pexels-photo-14477883.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
 ];
 
